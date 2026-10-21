@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadro Drag and Drop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="kanban-board">
+
+      <!-- Coluna: A Fazer -->
+      <div class="kanban-column" id="coluna-a-fazer">
+        <div class="column-header">
+          <span>📝</span>
+          <h2>A Fazer</h2>
+        </div>
+        <div class="card-list">
+          <div class="card" id="card-1" draggable="true">Redação do Enem</div>
+        </div>
+      </div>
+
+      <!-- Coluna: Em Andamento -->
+      <div class="kanban-column" id="coluna-em-andamento">
+        <div class="column-header">
+          <span>🚀</span>
+          <h2>Em Andamento</h2>
+        </div>
+        <div class="card-list">
+          <div class="card" id="card-2" draggable="true">Estudar Física (Óptica)</div>
+        </div>
+      </div>
+
+      <!-- Coluna: Concluído -->
+      <div class="kanban-column" id="coluna-concluido">
+        <div class="column-header">
+          <span>✅</span>
+          <h2>Concluído</h2>
+        </div>
+        <div class="card-list">
+          <!-- Por padrão já vem com a classe .concluido -->
+          <div class="card concluido" id="card-3" draggable="true">Trabalho de História</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
